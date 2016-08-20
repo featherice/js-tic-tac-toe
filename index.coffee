@@ -15,8 +15,7 @@ class View
 		for i in [0...3]
 			console.log('|',board[0+i*3],'|', board[1+i*3],'|', board[2+i*3],'|')
 			console.log('-------------')
-			alert('ll')
-
+			
 my_model = new Model()
 my_view = new View()
 controller = new Controller(my_model, my_view)
