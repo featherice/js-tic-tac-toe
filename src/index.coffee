@@ -14,10 +14,10 @@ class Controller
 
 class View
 	draw_board: (board) ->
-		document.write('-------'+"<br>")
+		document.write('--------'+"<br>")
 		for i in [0...3]
 			document.write('|', board[0]+i*3, '|', board[1]+i*3, '|', board[2]+i*3, '|', "<br>")
-			document.write('-------'+"<br>")
+			document.write('--------'+"<br>")
 
 model = new Model()
 view = new View()
