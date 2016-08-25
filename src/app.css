@@ -1,0 +1,22 @@
+.gameBoard {
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 300px;
+}
+.cell {
+  flex: 0 0 32%;
+  height: 100px;
+  margin: 2px 0px;
+  background-color: #1B377C;
+  cursor: pointer;
+  transition: background-color 0.5s;
+  border-radius: 10%;
+  text-align: center;
+  font-size: 5em;
+  color: #FF8319;
+}
+.cell:hover {
+  background-color: #2B5DDB;
+}
