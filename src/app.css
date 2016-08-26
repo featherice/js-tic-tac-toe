@@ -1,16 +1,59 @@
 .gameBoard {
+  position: absolute;
+  left: 0;
+  right: 0;
   margin: 30px auto;
+  opacity: 1;
+  cursor: pointer;
+  visibility: visible;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 300px;
+  transition: visibility 0s 0.8s, opacity 0.8s linear;
+}
+.menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  opacity: 1;
+  visibility: visible;
+  width: 300px; 
+  height: 300px;
+  transition: visibility 0s 0.8s, opacity 0.8s linear;
+}
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  cursor: default;
+}
+.newGameButton {
+  cursor: pointer;
+  margin: 50px 0px;
+  padding: 20px;
+  height: 30px;
+  background-color: #1B377C;
+  font-size: 3em;
+  color: #FF8319;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.winner {
+  padding: 20px;
+  height: 30px;
+  font-size: 3em;
+  color: #1B377C;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .cell {
   flex: 0 0 32%;
   height: 100px;
   margin: 2px 0px;
   background-color: #1B377C;
-  cursor: pointer;
   transition: background-color 0.5s;
   border-radius: 10%;
   text-align: center;
